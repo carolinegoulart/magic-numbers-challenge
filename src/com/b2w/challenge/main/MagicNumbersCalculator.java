@@ -22,10 +22,10 @@ public class MagicNumbersCalculator {
 
     public static boolean isMagic(int number) {
         double sqrt = Math.sqrt(number);
-        return isIntegerAndPositive(sqrt) && isPrime((int) sqrt);
+        return isNatural(sqrt) && isPrime((int) sqrt);
     }
 
-    public static boolean isIntegerAndPositive(double number) {
+    public static boolean isNatural(double number) {
         if (number < 0) return false;
         return number % Math.floor(number) == 0;
     }

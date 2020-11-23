@@ -26,18 +26,18 @@ public class MagicNumbersCalculatorTest {
 
     @Test
     public void whenNumbersAreIntegerAndPositive_thenAssertTrue() {
-        assertTrue(MagicNumbersCalculator.isIntegerAndPositive(3));
-        assertTrue(MagicNumbersCalculator.isIntegerAndPositive(1.0));
-        assertTrue(MagicNumbersCalculator.isIntegerAndPositive(100));
-        assertTrue(MagicNumbersCalculator.isIntegerAndPositive(831927391));
+        assertTrue(MagicNumbersCalculator.isNatural(3));
+        assertTrue(MagicNumbersCalculator.isNatural(1.0));
+        assertTrue(MagicNumbersCalculator.isNatural(100));
+        assertTrue(MagicNumbersCalculator.isNatural(831927391));
     }
 
     @Test
     public void whenNumbersAreNotIntegerAndPositive_thenAssertFalse() {
-        assertFalse(MagicNumbersCalculator.isIntegerAndPositive(-987));
-        assertFalse(MagicNumbersCalculator.isIntegerAndPositive(-1.8));
-        assertFalse(MagicNumbersCalculator.isIntegerAndPositive(0));
-        assertFalse(MagicNumbersCalculator.isIntegerAndPositive(5.4));
+        assertFalse(MagicNumbersCalculator.isNatural(-987));
+        assertFalse(MagicNumbersCalculator.isNatural(-1.8));
+        assertFalse(MagicNumbersCalculator.isNatural(0));
+        assertFalse(MagicNumbersCalculator.isNatural(5.4));
     }
 
     @Test
