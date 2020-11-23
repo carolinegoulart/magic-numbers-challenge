@@ -6,6 +6,7 @@ Um número X é dito “mágico” quando a raiz quadrada de X existe e é um n�
 ## Tecnologias utilizadas
 - Java 8
 - JUnit 4
+- Maven
 - IntelliJ IDEA
 
 ## Solução
