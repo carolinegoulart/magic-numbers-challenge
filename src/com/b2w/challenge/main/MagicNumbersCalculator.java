@@ -8,10 +8,12 @@ public class MagicNumbersCalculator {
         int count = 0;
 
         for (List<Integer> interval: listOfIntervals) {
-            for (int i = interval.get(0); i <= interval.get(1); i++) {
-                if (isMagic(i)) {
+            int lowerLimit = interval.get(0);
+            int upperLimit = interval.get(1);
+
+            for (int number = lowerLimit; number <= upperLimit; number++) {
+                if (isMagic(number))
                     count++;
-                }
             }
         }
 
