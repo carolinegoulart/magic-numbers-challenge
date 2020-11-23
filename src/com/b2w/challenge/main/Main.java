@@ -16,11 +16,11 @@ public class Main {
 
             List<List<Integer>> listOfIntervals = new ArrayList<>();
 
-            for (int i = 0; i < numberOfIntervals; i++) {
-                System.out.println("Insira o limite inferior do intervalo número " + (i+1) + ": ");
+            for (int count = 0; count < numberOfIntervals; count++) {
+                System.out.println("Insira o limite inferior do intervalo número " + (count + 1) + ": ");
                 int lowerLimit = scanner.nextInt();
 
-                System.out.println("Insira o limite superior do intervalo número " + (i+1) + ": ");
+                System.out.println("Insira o limite superior do intervalo número " + (count + 1) + ": ");
                 int upperLimit = scanner.nextInt();
 
                 List<Integer> interval = new ArrayList<>();
